@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		C18130852827663000B3B55C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18130842827663000B3B55C /* AppDelegate.swift */; };
 		C18130872827663000B3B55C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18130862827663000B3B55C /* SceneDelegate.swift */; };
-		C18130892827663000B3B55C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18130882827663000B3B55C /* ViewController.swift */; };
+		C18130892827663000B3B55C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18130882827663000B3B55C /* FirstViewController.swift */; };
 		C181308C2827663000B3B55C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C181308A2827663000B3B55C /* Main.storyboard */; };
 		C181308E2827663200B3B55C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C181308D2827663200B3B55C /* Assets.xcassets */; };
 		C18130912827663200B3B55C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C181308F2827663200B3B55C /* LaunchScreen.storyboard */; };
+		C181309B2827672C00B3B55C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181309A2827672C00B3B55C /* SecondViewController.swift */; };
+		C181309D28276A8500B3B55C /* TipsyBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181309C28276A8500B3B55C /* TipsyBrain.swift */; };
+		C18130A12827866E00B3B55C /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = C18130A02827866E00B3B55C /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C18130812827663000B3B55C /* tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18130842827663000B3B55C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C18130862827663000B3B55C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C18130882827663000B3B55C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C18130882827663000B3B55C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		C181308B2827663000B3B55C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C181308D2827663200B3B55C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C18130902827663200B3B55C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C18130922827663200B3B55C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C181309A2827672C00B3B55C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C181309C28276A8500B3B55C /* TipsyBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyBrain.swift; sourceTree = "<group>"; };
+		C18130A02827866E00B3B55C /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		C18130782827663000B3B55C = {
 			isa = PBXGroup;
 			children = (
+				C181309F2827866300B3B55C /* Documentation */,
 				C18130832827663000B3B55C /* tipsy */,
 				C18130822827663000B3B55C /* Products */,
 			);
@@ -56,15 +63,49 @@
 		C18130832827663000B3B55C /* tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				C181309E28276A8B00B3B55C /* Model */,
+				C18130982827668D00B3B55C /* View */,
+				C18130992827669400B3B55C /* Controller */,
 				C18130842827663000B3B55C /* AppDelegate.swift */,
 				C18130862827663000B3B55C /* SceneDelegate.swift */,
-				C18130882827663000B3B55C /* ViewController.swift */,
-				C181308A2827663000B3B55C /* Main.storyboard */,
 				C181308D2827663200B3B55C /* Assets.xcassets */,
 				C181308F2827663200B3B55C /* LaunchScreen.storyboard */,
 				C18130922827663200B3B55C /* Info.plist */,
 			);
 			path = tipsy;
+			sourceTree = "<group>";
+		};
+		C18130982827668D00B3B55C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C181308A2827663000B3B55C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C18130992827669400B3B55C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C18130882827663000B3B55C /* FirstViewController.swift */,
+				C181309A2827672C00B3B55C /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C181309E28276A8B00B3B55C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C181309C28276A8500B3B55C /* TipsyBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C181309F2827866300B3B55C /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C18130A02827866E00B3B55C /* screenshot.png */,
+			);
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18130A12827866E00B3B55C /* screenshot.png in Resources */,
 				C18130912827663200B3B55C /* LaunchScreen.storyboard in Resources */,
 				C181308E2827663200B3B55C /* Assets.xcassets in Resources */,
 				C181308C2827663000B3B55C /* Main.storyboard in Resources */,
@@ -138,7 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C18130892827663000B3B55C /* ViewController.swift in Sources */,
+				C181309B2827672C00B3B55C /* SecondViewController.swift in Sources */,
+				C18130892827663000B3B55C /* FirstViewController.swift in Sources */,
+				C181309D28276A8500B3B55C /* TipsyBrain.swift in Sources */,
 				C18130852827663000B3B55C /* AppDelegate.swift in Sources */,
 				C18130872827663000B3B55C /* SceneDelegate.swift in Sources */,
 			);
